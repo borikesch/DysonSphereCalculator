@@ -1,0 +1,25 @@
+<div *ngIf="recipeService.loaded$ | async">
+  <h2>Dyson Sphere Calculator</h2>
+  <div>
+    <label for="amount">Amount you want to make </label>
+    <input id="amount" [(ngModel)]="amount" placeholder="amount" type="number">
+  </div>
+  <ng-container *ngIf="itemsCopy.length > 0">
+    <div>
+      <label for="itemId">Choose the item you want to make </label>
+      <select id="itemId" [(ngModel)]="itemId">
+        <ng-container *ngFor="let item of itemsCopy">
+          <option [value]="item.index">
+            {{ item.name }}
+          </option>
+        </ng-container>
+      </select>
+    </div>
+  </ng-container>
+  <div>
+    <button (click)="onClickCalculate()">Calculate</button>
+  </div>
+  <div *ngFor="let ingredient of result">
+    {{ ingredient.name }} {{ ingredient.amount }}
+  </div>
+</div>

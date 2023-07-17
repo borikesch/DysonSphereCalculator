@@ -1,0 +1,1133 @@
+[
+    {
+        "name": "Iron Ore",
+        "index": 0,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Copper Ore",
+        "index": 1,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Silicon Ore",
+        "index": 2,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            },
+            {
+                "time": 10,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Stone",
+                        "index": 4,
+                        "amount": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Titanium Ore",
+        "index": 3,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Stone",
+        "index": 4,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Coal",
+        "index": 5,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Crude Oil",
+        "index": 6,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Fire Ice",
+        "index": 7,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Log",
+        "index": 8,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Plant fuel",
+        "index": 9,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Water",
+        "index": 10,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Fractal Silicon",
+        "index": 11,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Kimberlite Ore",
+        "index": 12,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Spiniform Stalagmite Crystal",
+        "index": 13,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Unipolar Magnet",
+        "index": 14,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Critical Photon",
+        "index": 15,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Optical Grating Crystal",
+        "index": 16,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Iron Ingot",
+        "index": 17,
+        "recipes": [
+            {
+                "time": 1,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Iron Ore",
+                        "index": 0,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Copper Ingot",
+        "index": 18,
+        "recipes": [
+            {
+                "time": 1,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Copper Ore",
+                        "index": 1,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "High Purity Silicon",
+        "index": 19,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Silicon Ore",
+                        "index": 2,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Titanium Ingot",
+        "index": 20,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Titanium Ore",
+                        "index": 3,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Stone Brick",
+        "index": 21,
+        "recipes": [
+            {
+                "time": 1,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Stone",
+                        "index": 4,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Energetic Graphite",
+        "index": 22,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Coal",
+                        "index": 5,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Hydrogen",
+        "index": 23,
+        "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            },
+            {
+                "time": 2,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Fire Ice",
+                        "index": 7,
+                        "amount": 2
+                    }
+                ],
+                "Byproduct": [
+                    {
+                        "name": "Graphene",
+                        "index": 25,
+                        "amount": 2
+                    }
+                ]
+            },
+            {
+                "time": 4,
+                "process": "Refining",
+                "ingredients": [
+                    {
+                        "name": "Crude Oil",
+                        "index": 6,
+                        "amount": 2
+                    }
+                ],
+                "Byproduct": [
+                    {
+                        "name": "Refined Oil",
+                        "index": 24,
+                        "amount": 2
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 3,
+                "time": 4,
+                "process": "Refining",
+                "ingredients": [
+                    {
+                        "name": "Refined Oil",
+                        "index": 24,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 2
+                    }
+                ],
+                "Byproduct": [
+                    {
+                        "name": "Energetic Graphite",
+                        "index": 22,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 2,
+                "time": 4,
+                "process": "Collider",
+                "ingredients": [
+                    {
+                        "name": "Critical Photon",
+                        "index": 15,
+                        "amount": 2
+                    }
+                ],
+                "Byproduct": [
+                    {
+                        "name": "Antimatter",
+                        "index": 26,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Refined Oil",
+        "index": 24,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 4,
+                "process": "Refining",
+                "ingredients": [
+                    {
+                        "name": "Crude Oil",
+                        "index": 6,
+                        "amount": 2
+                    }
+                ],
+                "Byproduct": [
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 3,
+                "time": 4,
+                "process": "Refining",
+                "ingredients": [
+                    {
+                        "name": "Refined Oil",
+                        "index": 24,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Coal",
+                        "index": 5,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Graphene",
+        "index": 25,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 3,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Sulfuric Acid",
+                        "index": 27,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Energetic Graphite",
+                        "index": 22,
+                        "amount": 3
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 2,
+                "time": 2,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Fire Ice",
+                        "index": 7,
+                        "amount": 2
+                    }
+                ],
+                "Byproduct": [
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Antimatter",
+        "index": 26,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 4,
+                "process": "Collider",
+                "ingredients": [
+                    {
+                        "name": "Critical Photon",
+                        "index": 15,
+                        "amount": 2
+                    }
+                ],
+                "Byproduct": [
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Sulfuric Acid",
+        "index": 27,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 4,
+                "time": 6,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Refined Oil",
+                        "index": 24,
+                        "amount": 6
+                    },
+                    {
+                        "name": "Stone",
+                        "index": 4,
+                        "amount": 8
+                    },
+                    {
+                        "name": "Water",
+                        "index": 10,
+                        "amount": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Plastic",
+        "index": 28,
+        "recipes": [
+            {
+                "time": 3,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Refined Oil",
+                        "index": 24,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Energetic Graphite",
+                        "index": 22,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Proliferator Mk1",
+        "index": 29,
+        "recipes": [
+            {
+                "time": 0.5,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Coal",
+                        "index": 5,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Proliferator Mk2",
+        "index": 30,
+        "recipes": [
+            {
+                "time": 1,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Diamond",
+                        "index": 31,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Proliferator Mk1",
+                        "index": 29,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Diamond",
+        "index": 31,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Energetic Graphite",
+                        "index": 22,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 2,
+                "time": 1.5,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Kimberlite Ore",
+                        "index": 12,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Proliferator Mk3",
+        "index": 32,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Proliferator Mk2",
+                        "index": 30,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Carbon Nanotube",
+                        "index": 33,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Carbon Nanotube",
+        "index": 33,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 4,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Graphene",
+                        "index": 25,
+                        "amount": 3
+                    },
+                    {
+                        "name": "Titanium Ingot",
+                        "index": 20,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 2,
+                "time": 4,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Spiniform Stalagmite Crystal",
+                        "index": 13,
+                        "amount": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Magnet",
+        "index": 34,
+        "recipes": [
+            {
+                "time": 1.5,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Iron Ore",
+                        "index": 0,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Magnetic Coil",
+        "index": 35,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 1,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Magnet",
+                        "index": 34,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Copper Ingot",
+                        "index": 18,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Crystal Silicon",
+        "index": 36,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "High Purity Silicon",
+                        "index": 19,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 2,
+                "time": 1.5,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Fractal Silicon",
+                        "index": 11,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Steel",
+        "index": 37,
+        "recipes": [
+            {
+                "time": 3,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Iron Ingot",
+                        "index": 17,
+                        "amount": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Gear",
+        "index": 38,
+        "recipes": [
+            {
+                "time": 1,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Iron Ingot",
+                        "index": 17,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Titanium Alloy",
+        "index": 39,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 4,
+                "time": 12,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Titanium Ingot",
+                        "index": 20,
+                        "amount": 4
+                    },
+                    {
+                        "name": "Steel",
+                        "index": 37,
+                        "amount": 4
+                    },
+                    {
+                        "name": "Sulfuric Acid",
+                        "index": 27,
+                        "amount": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Glass",
+        "index": 40,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 1,
+                "time": 2,
+                "process": "Smelting",
+                "ingredients": [
+                    {
+                        "name": "Stone",
+                        "index": 4,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Organic Crystal",
+        "index": 41,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 1,
+                "time": 6,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Plastic",
+                        "index": 28,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Refined Oil",
+                        "index": 24,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Water",
+                        "index": 10,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Hydrogen Fuel Rod",
+        "index": 42,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 6,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Titanium Ingot",
+                        "index": 20,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Deuterium Fuel Rod",
+        "index": 43,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 12,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Titanium Alloy",
+                        "index": 39,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Deuterium",
+                        "index": 44,
+                        "amount": 20
+                    },
+                    {
+                        "name": "Super-magnetic Ring",
+                        "index": 45,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Deuterium",
+        "index": 44,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 0.01,
+                "time": 1000,
+                "process": "Fractionator",
+                "ingredients": [
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 5,
+                "time": 2.5,
+                "process": "Collider",
+                "ingredients": [
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 10
+                    }
+                ]
+            },
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            }
+        ]
+    },
+    {
+        "name": "Super-magnetic Ring",
+        "index": 45,
+        "recipes": [
+            {
+                "time": 3,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Magnet",
+                        "index": 34,
+                        "amount": 3
+                    },
+                    {
+                        "name": "Energetic Graphite",
+                        "index": 22,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Electromagnetic Turbine",
+                        "index": 46,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Electromagnetic Turbine",
+        "index": 46,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Magnetic Coil",
+                        "index": 35,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Electric Motor",
+                        "index": 47,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Electric Motor",
+        "index": 47,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Iron Ingot",
+                        "index": 17,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Gear",
+                        "index": 38,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Magnetic Coil",
+                        "index": 35,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Titanium Glass",
+        "index": 48,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 5,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Glass",
+                        "index": 40,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Titanium Ingot",
+                        "index": 20,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Water",
+                        "index": 10,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Prism",
+        "index": 49,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 2,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Glass",
+                        "index": 40,
+                        "amount": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Titanium Crystal",
+        "index": 50,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 4,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Titanium Ingot",
+                        "index": 20,
+                        "amount": 3
+                    },
+                    {
+                        "name": "Organic Crystal",
+                        "index": 41,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Thruster",
+        "index": 51,
+        "recipes": [
+            {
+                "time": 4,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Steel",
+                        "index": 37,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Copper Ingot",
+                        "index": 18,
+                        "amount": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Reinforced Thruster",
+        "index": 52,
+        "recipes": [
+            {
+                "time": 6,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Titanium Alloy",
+                        "index": 39,
+                        "amount": 5
+                    },
+                    {
+                        "name": "Electromagnetic Turbine",
+                        "index": 46,
+                        "amount": 5
+                    }
+                ]
+            }
+        ]
+    }
+]
