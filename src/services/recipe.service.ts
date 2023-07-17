@@ -30,7 +30,7 @@ export class RecipeService {
         itemData?.recipes.forEach(recipe => {
             recipe.ingredients.forEach(ingredient => {
                 let newIngredient: Ingredient = JSON.parse(JSON.stringify(ingredient))
-                newIngredient.amount *= amount;
+                newIngredient.amount *= recipe.amountMadeMultiplier ? amount / recipe.amountMadeMultiplier : amount;
                 result.push(newIngredient);
                 result = result.concat(this.getTotalIngredients(newIngredient.index, newIngredient.amount))
             });

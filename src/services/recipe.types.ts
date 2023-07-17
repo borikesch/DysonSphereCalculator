@@ -5,6 +5,7 @@ export interface Item {
 }
 
 export interface Recipe {
+    amountMadeMultiplier?: number;
     time: number;
     process: string; // TODO: enum
     ingredients: Ingredient[]

@@ -1129,5 +1129,787 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Strange Matter",
+        "index": 53,
+        "recipes": [
+            {
+                "time": 8,
+                "process": "Collider",
+                "ingredients": [
+                    {
+                        "name": "Particle Container",
+                        "index": 54,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Iron Ingot",
+                        "index": 17,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Deuterium",
+                        "index": 44,
+                        "amount": 10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Particle Container",
+        "index": 54,
+        "recipes": [
+            {
+                "time": 4,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Electromagnetic Turbine",
+                        "index": 46,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Copper Ingot",
+                        "index": 18,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Graphene",
+                        "index": 25,
+                        "amount": 2
+                    }
+                ]
+            },
+            {
+                "time": 4,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Unipolar Magnet",
+                        "index": 14,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Copper Ingot",
+                        "index": 18,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Circuit Board",
+        "index": 55,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 1,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Iron Ingot",
+                        "index": 17,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Copper Ingot",
+                        "index": 18,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Graviton Lens",
+        "index": 56,
+        "recipes": [
+            {
+                "time": 6,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Diamond",
+                        "index": 31,
+                        "amount": 4
+                    },
+                    {
+                        "name": "Strange Matter",
+                        "index": 53,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Logistics Bot",
+        "index": 57,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Iron Ingot",
+                        "index": 17,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Electromagnetic Turbine",
+                        "index": 46,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Processor",
+                        "index": 58,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Processor",
+        "index": 58,
+        "recipes": [
+            {
+                "time": 3,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Circuit Board",
+                        "index": 55,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Microcrystalline component",
+                        "index": 59,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Microcrystalline component",
+        "index": 59,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "High Purity Silicon",
+                        "index": 19,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Copper Ingot",
+                        "index": 18,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Logistics Drone",
+        "index": 60,
+        "recipes": [
+            {
+                "time": 4,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Iron Ingot",
+                        "index": 17,
+                        "amount": 5
+                    },
+                    {
+                        "name": "Processor",
+                        "index": 58,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Thruster",
+                        "index": 51,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Logistics Vessel",
+        "index": 61,
+        "recipes": [
+            {
+                "time": 6,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Titanium Alloy",
+                        "index": 39,
+                        "amount": 10
+                    },
+                    {
+                        "name": "Processor",
+                        "index": 58,
+                        "amount": 10
+                    },
+                    {
+                        "name": "Reinforced Thruster",
+                        "index": 52,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Small Carrier Rocket",
+        "index": 62,
+        "recipes": [
+            {
+                "time": 6,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Dyson Sphere Component",
+                        "index": 63,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Strange Matter",
+                        "index": 53,
+                        "amount": 4
+                    },
+                    {
+                        "name": "Quantum Chip",
+                        "index": 64,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Dyson Sphere Component",
+        "index": 63,
+        "recipes": [
+            {
+                "time": 8,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Frame Material",
+                        "index": 65,
+                        "amount": 3
+                    },
+                    {
+                        "name": "Solar Sail",
+                        "index": 66,
+                        "amount": 3
+                    },
+                    {
+                        "name": "Processor",
+                        "index": 58,
+                        "amount": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Quantum Chip",
+        "index": 64,
+        "recipes": [
+            {
+                "time": 6,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Processor",
+                        "index": 58,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Plane Filter",
+                        "index": 67,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Frame Material",
+        "index": 65,
+        "recipes": [
+            {
+                "time": 6,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Carbon Nanotube",
+                        "index": 33,
+                        "amount": 4
+                    },
+                    {
+                        "name": "Titanium Alloy",
+                        "index": 39,
+                        "amount": 1
+                    },
+                    {
+                        "name": "High Purity Silicon",
+                        "index": 19,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Solar Sail",
+        "index": 66,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 3,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Graphene",
+                        "index": 25,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Photon Combiner",
+                        "index": 68,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Plane Filter",
+        "index": 67,
+        "recipes": [
+            {
+                "time": 12,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Casimir Crystal",
+                        "index": 69,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Titanium Glass",
+                        "index": 48,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Photon Combiner",
+        "index": 68,
+        "recipes": [
+            {
+                "time": 3,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Prism",
+                        "index": 49,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Circuit Board",
+                        "index": 55,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "time": 3,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Optical Grating Crystal",
+                        "index": 16,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Circuit Board",
+                        "index": 55,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Casimir Crystal",
+        "index": 69,
+        "recipes": [
+            {
+                "time": 3,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Titanium Crystal",
+                        "index": 50,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Graphene",
+                        "index": 25,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 12
+                    }
+                ]
+            },
+            {
+                "time": 3,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Optical Grating Crystal",
+                        "index": 16,
+                        "amount": 8
+                    },
+                    {
+                        "name": "Graphene",
+                        "index": 25,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 12
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Plasma Exciter",
+        "index": 70,
+        "recipes": [
+            {
+                "time": 2,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Magnetic Coil",
+                        "index": 35,
+                        "amount": 4
+                    },
+                    {
+                        "name": "Prism",
+                        "index": 49,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Particle Broadband",
+        "index": 71,
+        "recipes": [
+            {
+                "time": 8,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Carbon Nanotube",
+                        "index": 33,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Crystal Silicon",
+                        "index": 36,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Plastic",
+                        "index": 28,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Space Warper",
+        "index": 72,
+        "recipes": [
+            {
+                "time": 10,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Graviton Lens",
+                        "index": 56,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "amountMadeMultiplier": 8,
+                "time": 10,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Gravity Matrix",
+                        "index": 73,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Gravity Matrix",
+        "index": 73,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 24,
+                "process": "Research",
+                "ingredients": [
+                    {
+                        "name": "Graviton Lens",
+                        "index": 56,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Quantum Chip",
+                        "index": 64,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Annihilation Constraint Sphere",
+        "index": 74,
+        "recipes": [
+            {
+                "time": 20,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Particle Container",
+                        "index": 54,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Processor",
+                        "index": 58,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Antimatter Fuel Rod",
+        "index": 75,
+        "recipes": [
+            {
+                "amountMadeMultiplier": 2,
+                "time": 24,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Antimatter",
+                        "index": 26,
+                        "amount": 12
+                    },
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 12
+                    },
+                    {
+                        "name": "Annihilation Constraint Sphere",
+                        "index": 74,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Titanium Alloy",
+                        "index": 39,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Electromagnetic Matrix",
+        "index": 76,
+        "recipes": [
+            {
+                "time": 3,
+                "process": "Research",
+                "ingredients": [
+                    {
+                        "name": "Magnetic Coil",
+                        "index": 35,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Circuit Board",
+                        "index": 55,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Energy Matrix",
+        "index": 77,
+        "recipes": [
+            {
+                "time": 6,
+                "process": "Research",
+                "ingredients": [
+                    {
+                        "name": "Energetic Graphite",
+                        "index": 22,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Structure Matrix",
+        "index": 78,
+        "recipes": [
+            {
+                "time": 8,
+                "process": "Research",
+                "ingredients": [
+                    {
+                        "name": "Diamond",
+                        "index": 31,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Titanium Crystal",
+                        "index": 50,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Information Matrix",
+        "index": 79,
+        "recipes": [
+            {
+                "time": 10,
+                "process": "Research",
+                "ingredients": [
+                    {
+                        "name": "Processor",
+                        "index": 58,
+                        "amount": 2
+                    },
+                    {
+                        "name": "Particle Broadband",
+                        "index": 71,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Universe Matrix",
+        "index": 80,
+        "recipes": [
+            {
+                "time": 15,
+                "process": "Research",
+                "ingredients": [
+                    {
+                        "name": "Information Matrix",
+                        "index": 79,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Energy Matrix",
+                        "index": 77,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Gravity Matrix",
+                        "index": 73,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Structure Matrix",
+                        "index": 78,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Electromagnetic Matrix",
+                        "index": 76,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Antimatter",
+                        "index": 26,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Foundation",
+        "index": 81,
+        "recipes": [
+            {
+                "time": 1,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Stone Brick",
+                        "index": 21,
+                        "amount": 3
+                    },
+                    {
+                        "name": "Steel",
+                        "index": 37,
+                        "amount": 1
+                    }
+                ]
+            }
+        ]
     }
 ]
