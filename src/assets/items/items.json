@@ -110,7 +110,7 @@
         ]
     },
     {
-        "name": "Plant fuel",
+        "name": "Plant Fuel",
         "index": 9,
         "recipes": [
             {
@@ -296,6 +296,29 @@
                         "amount": 2
                     }
                 ]
+            },
+            {
+                "time": 4,
+                "process": "Refining",
+                "ingredients": [
+                    {
+                        "name": "Refined Oil",
+                        "index": 24,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 2
+                    }
+                ],
+                "byproduct": [
+                    {
+                        "name": "Hydrogen",
+                        "index": 23,
+                        "amount": 3
+                    }
+                ]
             }
         ]
     },
@@ -318,7 +341,7 @@
                         "amount": 2
                     }
                 ],
-                "Byproduct": [
+                "byproduct": [
                     {
                         "name": "Graphene",
                         "index": 25,
@@ -336,7 +359,7 @@
                         "amount": 2
                     }
                 ],
-                "Byproduct": [
+                "byproduct": [
                     {
                         "name": "Refined Oil",
                         "index": 24,
@@ -360,7 +383,7 @@
                         "amount": 2
                     }
                 ],
-                "Byproduct": [
+                "byproduct": [
                     {
                         "name": "Energetic Graphite",
                         "index": 22,
@@ -379,7 +402,7 @@
                         "amount": 2
                     }
                 ],
-                "Byproduct": [
+                "byproduct": [
                     {
                         "name": "Antimatter",
                         "index": 26,
@@ -404,7 +427,7 @@
                         "amount": 2
                     }
                 ],
-                "Byproduct": [
+                "byproduct": [
                     {
                         "name": "Hydrogen",
                         "index": 23,
@@ -468,7 +491,7 @@
                         "amount": 2
                     }
                 ],
-                "Byproduct": [
+                "byproduct": [
                     {
                         "name": "Hydrogen",
                         "index": 23,
@@ -493,7 +516,7 @@
                         "amount": 2
                     }
                 ],
-                "Byproduct": [
+                "byproduct": [
                     {
                         "name": "Hydrogen",
                         "index": 23,
@@ -507,6 +530,11 @@
         "name": "Sulfuric Acid",
         "index": 27,
         "recipes": [
+            {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            },
             {
                 "amountMadeMultiplier": 4,
                 "time": 6,
@@ -832,7 +860,11 @@
         "index": 41,
         "recipes": [
             {
-                "amountMadeMultiplier": 1,
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            },
+            {
                 "time": 6,
                 "process": "Chemical",
                 "ingredients": [
@@ -850,6 +882,27 @@
                         "name": "Water",
                         "index": 10,
                         "amount": 1
+                    }
+                ]
+            },
+            {
+                "time": 6,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Log",
+                        "index": 8,
+                        "amount": 20
+                    },
+                    {
+                        "name": "Plant Fuel",
+                        "index": 9,
+                        "amount": 30
+                    },
+                    {
+                        "name": "Water",
+                        "index": 10,
+                        "amount": 10
                     }
                 ]
             }
@@ -872,7 +925,7 @@
                     {
                         "name": "Hydrogen",
                         "index": 23,
-                        "amount": 1
+                        "amount": 10
                     }
                 ]
             }
@@ -1286,7 +1339,7 @@
                         "amount": 2
                     },
                     {
-                        "name": "Microcrystalline component",
+                        "name": "Microcrystalline Component",
                         "index": 59,
                         "amount": 2
                     }
@@ -1295,7 +1348,7 @@
         ]
     },
     {
-        "name": "Microcrystalline component",
+        "name": "Microcrystalline Component",
         "index": 59,
         "recipes": [
             {
@@ -1384,8 +1437,8 @@
                         "amount": 2
                     },
                     {
-                        "name": "Strange Matter",
-                        "index": 53,
+                        "name": "Deuterium Fuel Rod",
+                        "index": 43,
                         "amount": 4
                     },
                     {

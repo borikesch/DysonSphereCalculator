@@ -6,9 +6,10 @@ export interface Item {
 
 export interface Recipe {
     amountMadeMultiplier?: number;
+    byproduct?: Ingredient[];
     time: number;
     process: string; // TODO: enum
-    ingredients: Ingredient[]
+    ingredients: Ingredient[];
 }
 
 export interface Ingredient {
