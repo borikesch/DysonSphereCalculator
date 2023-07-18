@@ -11,12 +11,49 @@
           <option [value]="index">{{getOptionText(recipe)}}</option>
         </ng-container>
       </select>
+      <br />
+    </div>
+  </div>
+  <br />
+  <div>
+    <h3>What Machinery do you use?</h3>
+    <div>
+      <label for="assembler">Assembler</label>
+      <select id="assembler" [(ngModel)]="assemblerModifier">
+        <option [value]="0.75">Assembling Machine Mk1</option>
+        <option [value]="1">Assembling Machine Mk2</option>
+        <option [value]="1.5">Assembling Machine Mk3</option>
+      </select>
+      <br />
+    </div>
+    <div>
+      <label for="smelter">Smelter</label>
+      <select id="smelter" [(ngModel)]="smelterModifier">
+        <option [value]="1">Smelter Mk1</option>
+        <option [value]="2">Smelter Mk2</option>
+      </select>
+      <br />
     </div>
   </div>
   <div>
-    <label for="amount">Amount you want to make </label>
+    <h3>Add Proliferator to everything?</h3>
+    <div>
+      <label for="proliferator">Proliferator</label>
+      <select id="proliferator" [(ngModel)]="proliferatorModifier">
+        <option [value]="0">No Thanks</option>
+        <option [value]="12">Proliferator Mk1</option>
+        <option [value]="24">Proliferator Mk2</option>
+        <option [value]="60">Proliferator Mk3</option>
+      </select>
+      <br />
+    </div>
+  </div>
+  <br />
+  <div>
+    <label for="amount">Amount you want to make per minute </label>
     <input id="amount" [(ngModel)]="amount" placeholder="amount" type="number">
   </div>
+  <br />
   <ng-container *ngIf="itemsCopy.length > 0">
     <div>
       <label for="itemId">Choose the item you want to make </label>
@@ -29,10 +66,28 @@
       </select>
     </div>
   </ng-container>
+  <br />
   <div>
     <button (click)="onClickCalculate()">Calculate</button>
+    <button (click)="onClickGetRecipe()">Get Complete Recipe</button>
   </div>
-  <div *ngFor="let ingredient of result">
-    {{ ingredient.name }} {{ ingredient.amount }}
-  </div>
+  <br />
+  <ng-container *ngIf="result.length > 0">
+    <h3>Total ingredients needed</h3>
+    <div *ngFor="let ingredient of result">
+      {{ ingredient.amount }} {{ ingredient.name }}
+    </div>
+  </ng-container>
+  <ng-container *ngIf="proliferatorResult.length > 0">
+    <h3>Total ingredients needed for the proliferator</h3>
+    <div *ngFor="let ingredient of proliferatorResult">
+      {{ ingredient.amount }} {{ ingredient.name }}
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!!recipeResult">
+    <h3>The recipe</h3>
+    <div style="white-space: pre-line">
+      {{ recipeResult}}
+    </div>
+  </ng-container>
 </div>

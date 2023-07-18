@@ -120,7 +120,8 @@ describe('RecipeService', () => {
         { name: 'Titanium Alloy', ingredients: [{ name: 'Titanium Ingot', amount: 4 }, { name: 'Steel', amount: 4 }, { name: 'Sulfuric Acid', amount: 8 }], time: 12, process: 'Smelting', amountMadeMultiplier: 4 },
         { name: 'Glass', ingredients: [{ name: 'Stone', amount: 2 }], time: 2, process: 'Smelting' },
         { name: 'Diamond', ingredients: [{ name: 'Energetic Graphite', amount: 1 }], time: 2, process: 'Smelting' },
-        { name: 'Hydrogen', ingredients: [{ name: 'Refined Oil', amount: 1 }, { name: 'Hydrogen', amount: 2 }], time: 4, process: 'Refining', byproduct: [{ name: 'Energetic Graphite', amount: 1 }], amountMadeMultiplier: 3 },
+        // Removed, because difficult
+        // { name: 'Hydrogen', ingredients: [{ name: 'Refined Oil', amount: 1 }, { name: 'Hydrogen', amount: 2 }], time: 4, process: 'Refining', byproduct: [{ name: 'Energetic Graphite', amount: 1 }], amountMadeMultiplier: 3 },
         { name: 'Energetic Graphite', ingredients: [{ name: 'Refined Oil', amount: 1 }, { name: 'Hydrogen', amount: 2 }], time: 4, process: 'Refining', byproduct: [{ name: 'Hydrogen', amount: 3 }] },
         { name: 'Graphene', ingredients: [{ name: 'Fire Ice', amount: 2 }], time: 2, process: 'Chemical', byproduct: [{ name: 'Hydrogen', amount: 1 }], amountMadeMultiplier: 2 },
         { name: 'Hydrogen', ingredients: [{ name: 'Fire Ice', amount: 2 }], time: 2, process: 'Chemical', byproduct: [{ name: 'Graphene', amount: 2 }] },
@@ -135,7 +136,8 @@ describe('RecipeService', () => {
         { name: 'Titanium Glass', ingredients: [{ name: 'Glass', amount: 2 }, { name: 'Titanium Ingot', amount: 2 }, { name: 'Water', amount: 2 }], time: 5, process: 'Assembler', amountMadeMultiplier: 2 },
         { name: 'Prism', ingredients: [{ name: 'Glass', amount: 3 }], time: 2, process: 'Assembler', amountMadeMultiplier: 2 },
         { name: 'Diamond', ingredients: [{ name: 'Kimberlite Ore', amount: 1 }], time: 1.5, process: 'Smelting', amountMadeMultiplier: 2 },
-        { name: 'Refined Oil', ingredients: [{ name: 'Refined Oil', amount: 2 }, { name: 'Hydrogen', amount: 1 }, { name: 'Coal', amount: 1 }], time: 4, process: 'Refining', amountMadeMultiplier: 3 },
+        // Removed, because difficult
+        // { name: 'Refined Oil', ingredients: [{ name: 'Refined Oil', amount: 2 }, { name: 'Hydrogen', amount: 1 }, { name: 'Coal', amount: 1 }], time: 4, process: 'Refining', amountMadeMultiplier: 3 },
         { name: 'Titanium Crystal', ingredients: [{ name: 'Titanium Ingot', amount: 3 }, { name: 'Organic Crystal', amount: 1 }], time: 4, process: 'Assembler' },
         { name: 'Organic Crystal', ingredients: [{ name: 'Log', amount: 20 }, { name: 'Plant Fuel', amount: 30 }, { name: 'Water', amount: 10 }], time: 6, process: 'Assembler' },
         { name: 'Thruster', ingredients: [{ name: 'Steel', amount: 2 }, { name: 'Copper Ingot', amount: 3 }], time: 4, process: 'Assembler' },
@@ -154,6 +156,36 @@ describe('RecipeService', () => {
         { name: 'Logistics Vessel', ingredients: [{ name: 'Titanium Alloy', amount: 10 }, { name: 'Reinforced Thruster', amount: 2 }, { name: 'Processor', amount: 10 }], time: 6, process: 'Assembler' },
         { name: 'Small Carrier Rocket', ingredients: [{ name: 'Dyson Sphere Component', amount: 2 }, { name: 'Deuterium Fuel Rod', amount: 4 }, { name: 'Quantum Chip', amount: 2 }], time: 6, process: 'Assembler' },
         // Row 5
+        { name: 'Plasma Exciter', ingredients: [{ name: 'Magnetic Coil', amount: 4 }, { name: 'Prism', amount: 2 }], time: 2, process: 'Assembler' },
+        { name: 'Super-magnetic Ring', ingredients: [{ name: 'Electromagnetic Turbine', amount: 2 }, { name: 'Magnet', amount: 3 }, { name: 'Energetic Graphite', amount: 1 }], time: 3, process: 'Assembler' },
+        { name: 'Particle Broadband', ingredients: [{ name: 'Carbon Nanotube', amount: 2 }, { name: 'Crystal Silicon', amount: 2 }, { name: 'Plastic', amount: 1 }], time: 8, process: 'Assembler' },
+        { name: 'Processor', ingredients: [{ name: 'Circuit Board', amount: 2 }, { name: 'Microcrystalline Component', amount: 2 }], time: 3, process: 'Assembler' },
+        { name: 'Casimir Crystal', ingredients: [{ name: 'Titanium Crystal', amount: 1 }, { name: 'Graphene', amount: 2 }, { name: 'Hydrogen', amount: 12 }], time: 4, process: 'Assembler' },
+        { name: 'Particle Container', ingredients: [{ name: 'Electromagnetic Turbine', amount: 2 }, { name: 'Copper Ingot', amount: 2 }, { name: 'Graphene', amount: 2 }], time: 4, process: 'Assembler' },
+        { name: 'Deuterium', ingredients: [{ name: 'Hydrogen', amount: 10 }], time: 2.5, process: 'Collider', amountMadeMultiplier: 5 },
+        { name: 'Carbon Nanotube', ingredients: [{ name: 'Spiniform Stalagmite Crystal', amount: 6 }], time: 4, process: 'Chemical', amountMadeMultiplier: 2 },
+        { name: 'Plane Filter', ingredients: [{ name: 'Casimir Crystal', amount: 1 }, { name: 'Titanium Glass', amount: 2 }], time: 12, process: 'Assembler' },
+        { name: 'Solar Sail', ingredients: [{ name: 'Graphene', amount: 1 }, { name: 'Photon Combiner', amount: 1 }], time: 4, process: 'Assembler', amountMadeMultiplier: 2 },
+        { name: 'Frame Material', ingredients: [{ name: 'Carbon Nanotube', amount: 4 }, { name: 'Titanium Alloy', amount: 1 }, { name: 'High Purity Silicon', amount: 1 }], time: 6, process: 'Assembler' },
+        { name: 'Dyson Sphere Component', ingredients: [{ name: 'Frame Material', amount: 3 }, { name: 'Solar Sail', amount: 3 }, { name: 'Processor', amount: 3 }], time: 8, process: 'Assembler' },
+        // Row 6
+        { name: 'Photon Combiner', ingredients: [{ name: 'Prism', amount: 2 }, { name: 'Circuit Board', amount: 1 }], time: 3, process: 'Assembler' },
+        { name: 'Photon Combiner', ingredients: [{ name: 'Optical Grating Crystal', amount: 1 }, { name: 'Circuit Board', amount: 1 }], time: 3, process: 'Assembler' },
+        { name: 'Microcrystalline Component', ingredients: [{ name: 'High Purity Silicon', amount: 2 }, { name: 'Copper Ingot', amount: 1 }], time: 2, process: 'Assembler' },
+        { name: 'Quantum Chip', ingredients: [{ name: 'Processor', amount: 2 }, { name: 'Plane Filter', amount: 2 }], time: 6, process: 'Assembler' },
+        { name: 'Casimir Crystal', ingredients: [{ name: 'Optical Grating Crystal', amount: 8 }, { name: 'Graphene', amount: 2 }, { name: 'Hydrogen', amount: 12 }], time: 4, process: 'Assembler' },
+        { name: 'Particle Container', ingredients: [{ name: 'Unipolar Magnet', amount: 10 }, { name: 'Copper Ingot', amount: 2 }], time: 4, process: 'Assembler' },
+        { name: 'Space Warper', ingredients: [{ name: 'Graviton Lens', amount: 1 }], time: 10, process: 'Assembler' },
+        { name: 'Space Warper', ingredients: [{ name: 'Gravity Matrix', amount: 1 }], time: 10, process: 'Assembler', amountMadeMultiplier: 8 },
+        { name: 'Antimatter', ingredients: [{ name: 'Critical Photon', amount: 2 }], time: 2, byproduct: [{ name: 'Hydrogen', amount: 2 }], process: 'Collider', amountMadeMultiplier: 2 },
+        { name: 'Annihilation Constraint Sphere', ingredients: [{ name: 'Particle Container', amount: 1 }, { name: 'Processor', amount: 1 }], time: 20, process: 'Assembler' },
+        // Row 7
+        { name: 'Electromagnetic Matrix', ingredients: [{ name: 'Magnetic Coil', amount: 1 }, { name: 'Circuit Board', amount: 1 }], time: 3, process: 'Research' },
+        { name: 'Energy Matrix', ingredients: [{ name: 'Energetic Graphite', amount: 2 }, { name: 'Hydrogen', amount: 2 }], time: 6, process: 'Research' },
+        { name: 'Structure Matrix', ingredients: [{ name: 'Diamond', amount: 1 }, { name: 'Titanium Crystal', amount: 1 }], time: 8, process: 'Research' },
+        { name: 'Information Matrix', ingredients: [{ name: 'Processor', amount: 2 }, { name: 'Particle Broadband', amount: 1 }], time: 10, process: 'Research' },
+        { name: 'Gravity Matrix', ingredients: [{ name: 'Graviton Lens', amount: 1 }, { name: 'Quantum Chip', amount: 1 }], time: 24, process: 'Research', amountMadeMultiplier: 2 },
+        { name: 'Universe Matrix', ingredients: [{ name: 'Electromagnetic Matrix', amount: 1 }, { name: 'Energy Matrix', amount: 1 }, { name: 'Structure Matrix', amount: 1 }, { name: 'Information Matrix', amount: 1 }, { name: 'Gravity Matrix', amount: 1 }, { name: 'Antimatter', amount: 1 }], time: 15, process: 'Research' },
     ];
 
     recipeTestCases.forEach(test => {

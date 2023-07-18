@@ -465,23 +465,6 @@
         "recipes": [
             {
                 "amountMadeMultiplier": 2,
-                "time": 3,
-                "process": "Chemical",
-                "ingredients": [
-                    {
-                        "name": "Sulfuric Acid",
-                        "index": 27,
-                        "amount": 1
-                    },
-                    {
-                        "name": "Energetic Graphite",
-                        "index": 22,
-                        "amount": 3
-                    }
-                ]
-            },
-            {
-                "amountMadeMultiplier": 2,
                 "time": 2,
                 "process": "Chemical",
                 "ingredients": [
@@ -498,6 +481,23 @@
                         "amount": 1
                     }
                 ]
+            },
+            {
+                "amountMadeMultiplier": 2,
+                "time": 3,
+                "process": "Chemical",
+                "ingredients": [
+                    {
+                        "name": "Sulfuric Acid",
+                        "index": 27,
+                        "amount": 1
+                    },
+                    {
+                        "name": "Energetic Graphite",
+                        "index": 22,
+                        "amount": 3
+                    }
+                ]
             }
         ]
     },
@@ -507,7 +507,7 @@
         "recipes": [
             {
                 "amountMadeMultiplier": 2,
-                "time": 4,
+                "time": 2,
                 "process": "Collider",
                 "ingredients": [
                     {
@@ -681,14 +681,9 @@
                 "process": "Chemical",
                 "ingredients": [
                     {
-                        "name": "Graphene",
-                        "index": 25,
-                        "amount": 3
-                    },
-                    {
-                        "name": "Titanium Ingot",
-                        "index": 20,
-                        "amount": 1
+                        "name": "Spiniform Stalagmite Crystal",
+                        "index": 13,
+                        "amount": 6
                     }
                 ]
             },
@@ -698,9 +693,14 @@
                 "process": "Chemical",
                 "ingredients": [
                     {
-                        "name": "Spiniform Stalagmite Crystal",
-                        "index": 13,
-                        "amount": 6
+                        "name": "Graphene",
+                        "index": 25,
+                        "amount": 3
+                    },
+                    {
+                        "name": "Titanium Ingot",
+                        "index": 20,
+                        "amount": 1
                     }
                 ]
             }
@@ -964,6 +964,11 @@
         "index": 44,
         "recipes": [
             {
+                "time": 0,
+                "process": "Mining",
+                "ingredients": []
+            },
+            {
                 "amountMadeMultiplier": 0.01,
                 "time": 1000,
                 "process": "Fractionator",
@@ -986,11 +991,6 @@
                         "amount": 10
                     }
                 ]
-            },
-            {
-                "time": 0,
-                "process": "Mining",
-                "ingredients": []
             }
         ]
     },
@@ -1242,7 +1242,7 @@
                     {
                         "name": "Unipolar Magnet",
                         "index": 14,
-                        "amount": 2
+                        "amount": 10
                     },
                     {
                         "name": "Copper Ingot",
@@ -1532,7 +1532,7 @@
         "recipes": [
             {
                 "amountMadeMultiplier": 2,
-                "time": 3,
+                "time": 4,
                 "process": "Assembler",
                 "ingredients": [
                     {
@@ -1598,7 +1598,7 @@
                     {
                         "name": "Optical Grating Crystal",
                         "index": 16,
-                        "amount": 2
+                        "amount": 1
                     },
                     {
                         "name": "Circuit Board",
@@ -1614,7 +1614,7 @@
         "index": 69,
         "recipes": [
             {
-                "time": 3,
+                "time": 4,
                 "process": "Assembler",
                 "ingredients": [
                     {
@@ -1635,7 +1635,7 @@
                 ]
             },
             {
-                "time": 3,
+                "time": 4,
                 "process": "Assembler",
                 "ingredients": [
                     {
@@ -1700,7 +1700,7 @@
                     {
                         "name": "Plastic",
                         "index": 28,
-                        "amount": 2
+                        "amount": 1
                     }
                 ]
             }
@@ -1711,17 +1711,6 @@
         "index": 72,
         "recipes": [
             {
-                "time": 10,
-                "process": "Assembler",
-                "ingredients": [
-                    {
-                        "name": "Graviton Lens",
-                        "index": 56,
-                        "amount": 1
-                    }
-                ]
-            },
-            {
                 "amountMadeMultiplier": 8,
                 "time": 10,
                 "process": "Assembler",
@@ -1729,6 +1718,17 @@
                     {
                         "name": "Gravity Matrix",
                         "index": 73,
+                        "amount": 1
+                    }
+                ]
+            },
+            {
+                "time": 10,
+                "process": "Assembler",
+                "ingredients": [
+                    {
+                        "name": "Graviton Lens",
+                        "index": 56,
                         "amount": 1
                     }
                 ]

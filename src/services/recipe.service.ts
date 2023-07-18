@@ -36,6 +36,27 @@ export class RecipeService {
         return this.addSimilarIngredients(result);
     }
 
+    /**
+     * Get Recipe outlay
+     */
+    public getRecipeOutlay(itemIndex: number, amount: number, level: number = 1): string {
+        let result: string = '';
+        const itemData = this.filteredItems.find(item => item.index === itemIndex);
+        itemData?.recipes.forEach(recipe => {
+            recipe.ingredients.forEach(ingredient => {
+                let newIngredient: Ingredient = JSON.parse(JSON.stringify(ingredient))
+                newIngredient.amount *= recipe.amountMadeMultiplier ? amount / recipe.amountMadeMultiplier : amount;
+                result += '\n'
+                if (level) {
+                    result += '-'.repeat(level);
+                }
+                result += newIngredient.amount + ' ' + newIngredient.name;
+                result += this.getRecipeOutlay(newIngredient.index, newIngredient.amount, level + 1);
+            });
+        });
+        return result;
+    }
+
     public getItems(): Item[] {
         return JSON.parse(JSON.stringify(this.items))
     }
