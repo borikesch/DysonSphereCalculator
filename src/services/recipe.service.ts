@@ -1,27 +1,25 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { Ingredient, Item } from './recipe.types';
+import { Ingredient, Item, Recipe } from './recipe.types';
 import items from '../assets/items/items.json';
 
 @Injectable({
     providedIn: 'root',
 })
 export class RecipeService {
-    private _jsonURL = 'assets/items/items.json';
     private items: Item[] = [];
     private filteredItems: Item[] = []
     public loaded$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
     constructor() {
         this.items = items;
-        this.filteredItems = items;
+        this.removeRefiningRecipes();
+        this.filteredItems = JSON.parse(JSON.stringify(items));
         this.loaded$.next(true);
     }
 
     /** TODO
-     * check amounts made are correct with amount multiplier (plasma refining)
      * process byproducts somehow
-     * FUCKING OIL
      * Time restraints
      */
     public getTotalIngredients(itemIndex: number, amount: number): Ingredient[] {
@@ -57,6 +55,27 @@ export class RecipeService {
     private filterAllRecipes() {
         this.filteredItems.forEach(item => {
             item.recipes = [this.items[item.index].recipes[0]];
+        })
+    }
+
+    /**
+     * Removes all recipes that include an input in the output, because I don't know what to do with them
+     */
+    private removeRefiningRecipes() {
+        this.items.forEach(item => {
+            let recipesToKeep: Recipe[] = []
+            item.recipes.forEach(recipe => {
+                let keepRecipe = true;
+                recipe.ingredients.forEach(ingredient => {
+                    if (ingredient.index === item.index) {
+                        keepRecipe = false;
+                    }
+                })
+                if (keepRecipe) {
+                    recipesToKeep.push(recipe);
+                }
+            })
+            item.recipes = recipesToKeep;
         })
     }
 
