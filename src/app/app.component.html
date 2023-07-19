@@ -1,93 +1,115 @@
-<div *ngIf="recipeService.loaded$ | async">
-  <h2>Dyson Sphere Calculator</h2>
+<form>
 
-  <div>
-    <h3>What alternative recipes you want to use?</h3>
-    <div *ngFor="let item of duplicateRecipeItems; let itemIndex = index">
-      <label [for]="item.index">{{ item.name }}</label>
-      <select [id]="item.index" [(ngModel)]="alternativeRecipeIndex[itemIndex]"
-        (ngModelChange)="onChangeAlternateRecipe(itemIndex, item.index)">
-        <ng-container *ngFor="let recipe of item.recipes; let index = index">
-          <option [value]="index">{{getOptionText(recipe)}}</option>
+  <div class="container">
+    <ng-container *ngIf="recipeService.loaded$ | async">
+      <h2>Dyson Sphere Calculator</h2>
+
+      <h3>What alternative recipes you want to use?</h3>
+      <button *ngIf="!showRecipes" type="button" class="btn btn-link" (click)="onClickShowRecipes()">Show
+        recipes</button>
+      <button *ngIf="showRecipes" type="button" class="btn btn-link" (click)="onClickShowRecipes()">Hide
+        recipes</button>
+      <div class="row">
+        <ng-container *ngIf="showRecipes">
+          <div class="col-md-6">
+            <div *ngFor="let item of duplicateRecipeItems; let itemIndex = index" class="form-group">
+              <label for="{{item.index}}">{{ item.name }}</label>
+              <select class="form-control" id="{{item.index}}" name="{{item.index}}"
+                [(ngModel)]="alternativeRecipeIndex[itemIndex]"
+                (ngModelChange)="onChangeAlternateRecipe(itemIndex, item.index)">
+                <ng-container *ngFor="let recipe of item.recipes; let index = index">
+                  <option [value]="index">{{getOptionText(recipe)}}</option>
+                </ng-container>
+              </select>
+              <br />
+            </div>
+          </div>
         </ng-container>
-      </select>
+      </div>
       <br />
-    </div>
-  </div>
-  <br />
-  <div>
-    <h3>What Machinery do you use?</h3>
-    <div>
-      <label for="assembler">Assembler</label>
-      <select id="assembler" [(ngModel)]="assemblerModifier">
-        <option [value]="0.75">Assembling Machine Mk1</option>
-        <option [value]="1">Assembling Machine Mk2</option>
-        <option [value]="1.5">Assembling Machine Mk3</option>
-      </select>
+      <div class="row">
+        <h3>What Machinery do you use?</h3>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="assembler">Assembler</label>
+            <select class="form-control" id="assembler" name="assembler" [(ngModel)]="assemblerModifier">
+              <option [value]="0.75">Assembling Machine Mk1</option>
+              <option [value]="1">Assembling Machine Mk2</option>
+              <option [value]="1.5">Assembling Machine Mk3</option>
+            </select>
+            <br />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="smelter">Smelter</label>
+            <select class="form-control" id="smelter" name="smelter" [(ngModel)]="smelterModifier">
+              <option [value]="1">Smelter Mk1</option>
+              <option [value]="2">Smelter Mk2</option>
+            </select>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Add Proliferator to everything?</h3>
+        <div class="col-md-6">
+          <div class="form-group">
+            <select class="form-control" id="proliferator" name="proliferator" [(ngModel)]="proliferatorModifier">
+              <option [value]="0">No Thanks</option>
+              <option [value]="12">Proliferator Mk1</option>
+              <option [value]="24">Proliferator Mk2</option>
+              <option [value]="60">Proliferator Mk3</option>
+            </select>
+            <small id="emailHelp" class="form-text text-muted">Amount needed will be based on amount of ingredients
+              needed.</small>
+            <br />
+          </div>
+        </div>
+      </div>
       <br />
-    </div>
-    <div>
-      <label for="smelter">Smelter</label>
-      <select id="smelter" [(ngModel)]="smelterModifier">
-        <option [value]="1">Smelter Mk1</option>
-        <option [value]="2">Smelter Mk2</option>
-      </select>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="amount">Amount you want to make per minute </label>
+            <input class="form-control" id="amount" name="amount" [(ngModel)]="amount" placeholder="100" type="number">
+          </div>
+        </div>
+      </div>
       <br />
-    </div>
-  </div>
-  <div>
-    <h3>Add Proliferator to everything?</h3>
-    <div>
-      <label for="proliferator">Proliferator</label>
-      <select id="proliferator" [(ngModel)]="proliferatorModifier">
-        <option [value]="0">No Thanks</option>
-        <option [value]="12">Proliferator Mk1</option>
-        <option [value]="24">Proliferator Mk2</option>
-        <option [value]="60">Proliferator Mk3</option>
-      </select>
+      <ng-container *ngIf="itemsCopy.length > 0">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="itemId">Choose the item you want to make </label>
+              <select class="form-control" id="itemId" name="itemId" [(ngModel)]="itemId">
+                <ng-container *ngFor="let item of itemsCopy">
+                  <option [value]="item.index">
+                    {{ item.name }}
+                  </option>
+                </ng-container>
+              </select>
+            </div>
+          </div>
+        </div>
+      </ng-container>
       <br />
-    </div>
+      <div>
+        <button (click)="onClickCalculate()">Calculate</button>
+        <button (click)="onClickGetRecipe()">Get Complete Recipe</button>
+      </div>
+      <br />
+      <app-ingredient-formatter [ingredients]="result" title="Total Ingredients needed for the proliferator">
+      </app-ingredient-formatter>
+      <app-ingredient-formatter [ingredients]="proliferatorResult"
+        title="Total Ingredients needed for the proliferator">
+      </app-ingredient-formatter>
+      <ng-container *ngIf="!!recipeResult">
+        <h3>The recipe</h3>
+        <div style="white-space: pre-line">
+          {{ recipeResult}}
+        </div>
+      </ng-container>
+    </ng-container>
   </div>
-  <br />
-  <div>
-    <label for="amount">Amount you want to make per minute </label>
-    <input id="amount" [(ngModel)]="amount" placeholder="amount" type="number">
-  </div>
-  <br />
-  <ng-container *ngIf="itemsCopy.length > 0">
-    <div>
-      <label for="itemId">Choose the item you want to make </label>
-      <select id="itemId" [(ngModel)]="itemId">
-        <ng-container *ngFor="let item of itemsCopy">
-          <option [value]="item.index">
-            {{ item.name }}
-          </option>
-        </ng-container>
-      </select>
-    </div>
-  </ng-container>
-  <br />
-  <div>
-    <button (click)="onClickCalculate()">Calculate</button>
-    <button (click)="onClickGetRecipe()">Get Complete Recipe</button>
-  </div>
-  <br />
-  <ng-container *ngIf="result.length > 0">
-    <h3>Total ingredients needed</h3>
-    <div *ngFor="let ingredient of result">
-      {{ ingredient.amount }} {{ ingredient.name }}
-    </div>
-  </ng-container>
-  <ng-container *ngIf="proliferatorResult.length > 0">
-    <h3>Total ingredients needed for the proliferator</h3>
-    <div *ngFor="let ingredient of proliferatorResult">
-      {{ ingredient.amount }} {{ ingredient.name }}
-    </div>
-  </ng-container>
-  <ng-container *ngIf="!!recipeResult">
-    <h3>The recipe</h3>
-    <div style="white-space: pre-line">
-      {{ recipeResult}}
-    </div>
-  </ng-container>
-</div>
+</form>

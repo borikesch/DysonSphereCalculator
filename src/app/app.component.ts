@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   public assemblerModifier: string = '0.75';
   public smelterModifier: string = '1';
   public proliferatorModifier: string = '0';
+  public showRecipes = false;
 
   constructor(
     public recipeService: RecipeService,
@@ -44,6 +45,10 @@ export class AppComponent implements OnInit {
   onClickGetRecipe(): void {
     this.resetValues();
     this.recipeResult = this.recipeService.getRecipeOutlay(parseInt(this.itemId), parseInt(this.amount));
+  }
+
+  onClickShowRecipes(): void {
+    this.showRecipes = !this.showRecipes;
   }
 
   onChangeAlternateRecipe(indexInHtml: number, indexInList: number) {
