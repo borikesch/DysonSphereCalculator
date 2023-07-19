@@ -9,7 +9,7 @@ import { IngredientFormatterComponent } from './ingredient-formatter/ingredient-
 @NgModule({
   declarations: [
     AppComponent,
-    IngredientFormatterComponent
+    IngredientFormatterComponent,
   ],
   imports: [
     BrowserModule,

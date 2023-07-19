@@ -1,5 +1,4 @@
 <form>
-
   <div class="container">
     <ng-container *ngIf="recipeService.loaded$ | async">
       <h2>Dyson Sphere Calculator</h2>
@@ -32,7 +31,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label for="assembler">Assembler</label>
-            <select class="form-control" id="assembler" name="assembler" [(ngModel)]="assemblerModifier">
+            <select class="form-control" id="assembler" name="assembler" [(ngModel)]="machineModifiers.assembler">
               <option [value]="0.75">Assembling Machine Mk1</option>
               <option [value]="1">Assembling Machine Mk2</option>
               <option [value]="1.5">Assembling Machine Mk3</option>
@@ -43,7 +42,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label for="smelter">Smelter</label>
-            <select class="form-control" id="smelter" name="smelter" [(ngModel)]="smelterModifier">
+            <select class="form-control" id="smelter" name="smelter" [(ngModel)]="machineModifiers.smelting">
               <option [value]="1">Smelter Mk1</option>
               <option [value]="2">Smelter Mk2</option>
             </select>
@@ -99,9 +98,10 @@
         <button (click)="onClickGetRecipe()">Get Complete Recipe</button>
       </div>
       <br />
-      <app-ingredient-formatter [ingredients]="result" title="Total Ingredients needed for the proliferator">
+      <app-ingredient-formatter [modifiers]="machineModifiers" [ingredients]="result"
+        title="Total Ingredients needed for the proliferator">
       </app-ingredient-formatter>
-      <app-ingredient-formatter [ingredients]="proliferatorResult"
+      <app-ingredient-formatter [modifiers]="machineModifiers" [ingredients]="proliferatorResult"
         title="Total Ingredients needed for the proliferator">
       </app-ingredient-formatter>
       <ng-container *ngIf="!!recipeResult">

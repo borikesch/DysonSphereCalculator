@@ -21,6 +21,14 @@ export class AppComponent implements OnInit {
   public smelterModifier: string = '1';
   public proliferatorModifier: string = '0';
   public showRecipes = false;
+  public machineModifiers: any = {
+    assembler: '0.75',
+    smelting: '1',
+    chemical: '1',
+    collider: '1',
+    research: '1',
+    refining: '1',
+  }
 
   constructor(
     public recipeService: RecipeService,

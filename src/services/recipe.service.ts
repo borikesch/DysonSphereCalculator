@@ -57,6 +57,27 @@ export class RecipeService {
         return result;
     }
 
+    public getMachinesNeeded(itemIndex: number, amount: number, modifier: number): number {
+        let result = 1;
+        const itemData = this.filteredItems.find(item => item.index === itemIndex);
+        itemData?.recipes.forEach(recipe => {
+            const recipeTime = recipe.time;
+            const amountMade = recipe.amountMadeMultiplier ?? 1;
+            const madePerMinute = amountMade * 60 * modifier / recipeTime;
+            result = amount / madePerMinute;
+        });
+        return result;
+    }
+
+    public getProcess(itemIndex: number): string {
+        let result = '';
+        const itemData = this.filteredItems.find(item => item.index === itemIndex);
+        itemData?.recipes.forEach(recipe => {
+            result = recipe.process;
+        });
+        return result;
+    }
+
     public getItems(): Item[] {
         return JSON.parse(JSON.stringify(this.items))
     }
